@@ -12,23 +12,25 @@
   ```shell
   $ npm install or $ yarn install
   ```
-3. Run scripts by default for dev server and nodemon
+3. Rename .env.example to .env file and make the changes you need
+
+4. Run scripts for dev server and nodemon
   ```shell
   $ yarn run dev:server
   ```
-**4. Fun**
+**5. Fun**
 
 ## Includes:
 
-Nodemon
-Express JS
-Body-Parser
+- Nodemon
+- Express JS
+- Body-Parser
 
 ## Future dev:
 - Client part
--- React JS
--- Redux + Thunk
--- SCSS
+-* React JS
+-* Redux + Thunk
+-* SCSS
 - MongoDB + Mongoose
 - ESLint
 - Babel

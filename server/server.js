@@ -1,8 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
+require("dotenv").config();
+const port = process.env.PORT || 8080;
+
 const app = express();
-const port = 8080;
 
 // midleware section
 app.use(bodyParser.json({ limit: "1mb" }));
@@ -12,8 +14,10 @@ app.use((req, res, next) => {
   next();
 });
 
-// error handling
+// static res
+app.use(express.static("public"));
 
+// error handling
 app.use(function (err, req, res, next) {
   console.error(err.stack);
   res.status(500).send("Something broke!");
